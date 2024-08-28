@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3 uid="uid://dil4dxgpsb2md"]
+
+[ext_resource type="Texture2D" uid="uid://cx2pvtkdwfy1o" path="res://Art/bullet.png" id="1_28ajj"]
+[ext_resource type="Script" path="res://Scripts/laser_bullet.gd" id="2_x1xli"]
+[ext_resource type="Texture2D" uid="uid://lmrqv5cv7tj5" path="res://Art/circle-gradient.png" id="3_qkmjr"]
+[ext_resource type="AudioStream" uid="uid://srehq885wx18" path="res://sounds/Laser_Shoot21.wav" id="4_q4d7l"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2equm"]
+size = Vector2(72, 20)
+
+[node name="laser-bullet" type="TextureRect"]
+offset_top = -42.0
+offset_right = 96.0
+offset_bottom = 40.0
+texture = ExtResource("1_28ajj")
+script = ExtResource("2_x1xli")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(48, 41.1875)
+scale = Vector2(0.502, 0.5)
+color = Color(0.447059, 0, 0, 1)
+energy = 3.73
+range_item_cull_mask = 6
+texture = ExtResource("3_qkmjr")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(48, 41)
+shape = SubResource("RectangleShape2D_2equm")
+
+[node name="laser" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_q4d7l")
+volume_db = -17.333
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

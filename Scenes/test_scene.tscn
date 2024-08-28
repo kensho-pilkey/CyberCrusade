@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://geo1vqgd6f41"]
+
+[ext_resource type="Texture2D" uid="uid://wgd3g47ogysa" path="res://Art/binary.png" id="1_18me8"]
+[ext_resource type="PackedScene" uid="uid://d3pdopheag2ma" path="res://Scenes/player.tscn" id="2_tsxsm"]
+[ext_resource type="PackedScene" uid="uid://ctp7c3552qav5" path="res://Scenes/platform.tscn" id="3_jwt50"]
+[ext_resource type="PackedScene" uid="uid://xosjhdkcsast" path="res://Scenes/computer.tscn" id="4_mibam"]
+[ext_resource type="PackedScene" uid="uid://biavslrdld4qj" path="res://Scenes/sword_droid.tscn" id="5_g8yjo"]
+
+[node name="test_scene" type="Node2D"]
+
+[node name="Binary" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(1494, -386)
+scale = Vector2(6.76769, 4.8345)
+texture = ExtResource("1_18me8")
+
+[node name="player" parent="." instance=ExtResource("2_tsxsm")]
+position = Vector2(78, 60)
+
+[node name="platform" parent="." instance=ExtResource("3_jwt50")]
+position = Vector2(31, 248)
+
+[node name="platform2" parent="." instance=ExtResource("3_jwt50")]
+position = Vector2(420, 371)
+
+[node name="platform3" parent="." instance=ExtResource("3_jwt50")]
+position = Vector2(85, 567)
+
+[node name="platform4" parent="." instance=ExtResource("3_jwt50")]
+position = Vector2(-722, 656)
+scale = Vector2(20, 1)
+
+[node name="computer" parent="." instance=ExtResource("4_mibam")]
+position = Vector2(462, 231)
+
+[node name="enemy-1" parent="." instance=ExtResource("5_g8yjo")]
+position = Vector2(1162, 449)

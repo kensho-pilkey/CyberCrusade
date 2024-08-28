@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://csxidt74bkhg0"]
+
+[node name="end_screen" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 1)
+
+[node name="CreditsText" type="RichTextLabel" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+grow_horizontal = 0
+theme_override_font_sizes/normal_font_size = 60
+theme_override_font_sizes/bold_font_size = 30
+bbcode_enabled = true
+text = "
+
+[center]Thanks For Playing!!!
+
+
+[b]Game Created by:[/b]
+
+Connor Pilkey
+Adriel Lanuza Zeledon
+Bryson Hogsed
+[/center]
+"
+text_direction = 3

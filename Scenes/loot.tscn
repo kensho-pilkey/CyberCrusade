@@ -1,0 +1,192 @@
+[gd_scene load_steps=34 format=3 uid="uid://21fqv2o47up3"]
+
+[ext_resource type="Script" path="res://Scripts/loot.gd" id="1_ke2kj"]
+[ext_resource type="Texture2D" uid="uid://iiigbk8361hp" path="res://Art/white-circle.png" id="2_aen5k"]
+[ext_resource type="Texture2D" uid="uid://b0jo32hm5xg2d" path="res://Art/MOEDA DOURADA/Coin-1.png.png" id="3_phf3n"]
+[ext_resource type="Texture2D" uid="uid://bcyenpysp0dk0" path="res://Art/MOEDA DOURADA/Coin-2.png.png" id="4_pjc70"]
+[ext_resource type="Texture2D" uid="uid://dao0lmg8xt0ra" path="res://Art/MOEDA DOURADA/Coin-3.png.png" id="5_l5y78"]
+[ext_resource type="Texture2D" uid="uid://dcpfixe3t0f72" path="res://Art/MOEDA DOURADA/Coin-4.png.png" id="6_iky2t"]
+[ext_resource type="Texture2D" uid="uid://dxgk34l7ma2ta" path="res://Art/MOEDA DOURADA/Coin-5.png.png" id="7_dfip4"]
+[ext_resource type="Texture2D" uid="uid://bxl7k717w618d" path="res://Art/MOEDA DOURADA/Coin-6.png.png" id="8_f3vhr"]
+[ext_resource type="Texture2D" uid="uid://vpva3a25qnll" path="res://Art/MOEDA DOURADA/Coin-7.png.png" id="9_riex4"]
+[ext_resource type="Texture2D" uid="uid://obwrn6134wlr" path="res://Art/heart-Sheet.png" id="10_nqiro"]
+[ext_resource type="Texture2D" uid="uid://d06yfjw8h0mtl" path="res://Art/lightning.png" id="11_nfr8x"]
+[ext_resource type="AudioStream" uid="uid://q8o7ju7nurs4" path="res://sounds/8bit-powerup15.wav" id="12_feac8"]
+[ext_resource type="AudioStream" uid="uid://54cdte7fnu07" path="res://sounds/lightning.wav" id="14_tebu5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1un34"]
+atlas = ExtResource("3_phf3n")
+region = Rect2(0, 0, 800, 800)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yqw3m"]
+atlas = ExtResource("4_pjc70")
+region = Rect2(0, 0, 800, 800)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mi4ra"]
+atlas = ExtResource("5_l5y78")
+region = Rect2(0, 0, 800, 800)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vld81"]
+atlas = ExtResource("6_iky2t")
+region = Rect2(0, 0, 800, 800)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p31k2"]
+atlas = ExtResource("7_dfip4")
+region = Rect2(0, 0, 800, 800)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6tqk1"]
+atlas = ExtResource("8_f3vhr")
+region = Rect2(0, 0, 800, 800)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ibg5j"]
+atlas = ExtResource("9_riex4")
+region = Rect2(0, 0, 800, 800)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gexl6"]
+atlas = ExtResource("10_nqiro")
+region = Rect2(0, 0, 1024, 576)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ngwdx"]
+atlas = ExtResource("10_nqiro")
+region = Rect2(1024, 0, 1024, 576)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uxe0r"]
+atlas = ExtResource("10_nqiro")
+region = Rect2(2048, 0, 1024, 576)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rl3gl"]
+atlas = ExtResource("10_nqiro")
+region = Rect2(3072, 0, 1024, 576)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_62w35"]
+atlas = ExtResource("10_nqiro")
+region = Rect2(4096, 0, 1024, 576)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n7i1y"]
+atlas = ExtResource("10_nqiro")
+region = Rect2(5120, 0, 1024, 576)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tdx2p"]
+atlas = ExtResource("10_nqiro")
+region = Rect2(6144, 0, 1024, 576)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n4gv7"]
+atlas = ExtResource("10_nqiro")
+region = Rect2(7168, 0, 1024, 576)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dtatt"]
+atlas = ExtResource("10_nqiro")
+region = Rect2(8192, 0, 1024, 576)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_87tvp"]
+atlas = ExtResource("10_nqiro")
+region = Rect2(9216, 0, 1024, 576)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sd3xk"]
+atlas = ExtResource("11_nfr8x")
+region = Rect2(0, 0, 600, 600)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mvrrl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1un34")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yqw3m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mi4ra")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vld81")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p31k2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6tqk1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ibg5j")
+}],
+"loop": true,
+"name": &"coin",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gexl6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ngwdx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uxe0r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rl3gl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_62w35")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n7i1y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tdx2p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n4gv7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dtatt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_87tvp")
+}],
+"loop": true,
+"name": &"health",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sd3xk")
+}],
+"loop": true,
+"name": &"mana",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_me4pg"]
+radius = 300.167
+
+[node name="loot" type="Area2D"]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_ke2kj")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(1.00001, -2)
+scale = Vector2(84.4375, 76.0625)
+color = Color(0, 0, 1, 1)
+energy = 2.0
+range_item_cull_mask = 2
+texture = ExtResource("2_aen5k")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(4, -8)
+sprite_frames = SubResource("SpriteFrames_mvrrl")
+animation = &"mana"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_me4pg")
+
+[node name="health" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("12_feac8")
+
+[node name="mana" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("14_tebu5")
+volume_db = -18.889
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

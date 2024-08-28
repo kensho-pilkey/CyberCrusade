@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://xosjhdkcsast"]
+
+[ext_resource type="Script" path="res://Scripts/computer.gd" id="1_ly3cq"]
+[ext_resource type="Texture2D" uid="uid://dpapibptor10q" path="res://Art/comp_sprite.png" id="2_nsbgt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_07vx6"]
+size = Vector2(70, 43)
+
+[node name="computer" type="CharacterBody2D"]
+script = ExtResource("1_ly3cq")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 34.0
+offset_top = -102.0
+offset_right = 208.0
+offset_bottom = -7.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_nsbgt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(76, -78)
+shape = SubResource("RectangleShape2D_07vx6")
+disabled = true

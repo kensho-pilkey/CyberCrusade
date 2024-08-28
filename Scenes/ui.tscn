@@ -1,0 +1,91 @@
+[gd_scene load_steps=7 format=3 uid="uid://c11uja0y5jmai"]
+
+[ext_resource type="Texture2D" uid="uid://b2ll0bn1c1o8e" path="res://Art/manaBar2.png" id="1_7qvtj"]
+[ext_resource type="Texture2D" uid="uid://cvnrlxv1ujn63" path="res://Art/healthBar2.png" id="1_hh10y"]
+[ext_resource type="Script" path="res://Scripts/ui.gd" id="1_iglqy"]
+[ext_resource type="Texture2D" uid="uid://cvyktqwm8gd4v" path="res://Art/manaBar1.png" id="2_cuocw"]
+[ext_resource type="Texture2D" uid="uid://nffwmvfv3ktg" path="res://Art/healthBar1.png" id="2_po43b"]
+[ext_resource type="Texture2D" uid="uid://by5uys4q1e4li" path="res://Art/Coin-1.png.png" id="6_0r8vw"]
+
+[node name="UI" type="Control"]
+z_index = 1
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+script = ExtResource("1_iglqy")
+
+[node name="health_bar" type="TextureProgressBar" parent="."]
+layout_mode = 0
+offset_left = 1542.0
+offset_top = 123.0
+offset_right = 3816.0
+offset_bottom = 765.0
+scale = Vector2(0.15, 0.15)
+min_value = -280.0
+max_value = 1000.0
+texture_under = ExtResource("1_hh10y")
+texture_progress = ExtResource("2_po43b")
+
+[node name="mana" type="Label" parent="health_bar"]
+layout_mode = 0
+offset_left = 1120.0
+offset_top = 390.0
+offset_right = 2197.0
+offset_bottom = 562.0
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 120
+text = "Health 1000 / 1000"
+
+[node name="mana_bar" type="TextureProgressBar" parent="."]
+layout_mode = 0
+offset_left = 1538.0
+offset_top = 15.0
+offset_right = 3812.0
+offset_bottom = 657.0
+scale = Vector2(0.15, 0.15)
+min_value = -30.0
+texture_under = ExtResource("1_7qvtj")
+texture_progress = ExtResource("2_cuocw")
+
+[node name="mana" type="Label" parent="mana_bar"]
+layout_mode = 0
+offset_left = 1180.0
+offset_top = 390.0
+offset_right = 2238.0
+offset_bottom = 562.0
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 120
+text = "Power 100 / 100"
+
+[node name="coin_bar" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 1530.0
+offset_top = 217.0
+offset_right = 2330.0
+offset_bottom = 1017.0
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("6_0r8vw")
+
+[node name="coin" type="Label" parent="coin_bar"]
+layout_mode = 0
+offset_left = 740.0
+offset_top = 280.0
+offset_right = 1160.0
+offset_bottom = 780.0
+theme_override_font_sizes/font_size = 200
+text = "X 0
+"
+
+[node name="reset" type="Button" parent="."]
+modulate = Color(100, 1, 1, 1)
+layout_mode = 0
+offset_left = 27.0
+offset_top = 26.0
+offset_right = 143.0
+offset_bottom = 96.0
+theme_override_font_sizes/font_size = 30
+action_mode = 0
+text = "Reset"
+
+[connection signal="pressed" from="reset" to="." method="_on_reset_pressed"]

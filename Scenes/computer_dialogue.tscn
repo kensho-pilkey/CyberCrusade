@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://bt2g3j053jyuh"]
+
+[ext_resource type="Script" path="res://Scripts/computer_dialogue.gd" id="1_cn2nu"]
+[ext_resource type="Texture2D" uid="uid://y1h0eggsi7q6" path="res://Art/computer-blue.png" id="1_myo0t"]
+
+[node name="computer_dialogue" type="Node2D"]
+scale = Vector2(3, 3)
+script = ExtResource("1_cn2nu")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_myo0t")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 61.0
+offset_top = 90.0
+offset_right = 334.0
+offset_bottom = 192.0
+theme_override_font_sizes/font_size = 10
+autowrap_mode = 2
