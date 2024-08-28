@@ -5,15 +5,16 @@ You find yourself thrown into a digital battlefield inside your own computer aft
 
 ## Controls
 
-[A] - Left
-[D] - Right
-[SPACE] - Jump / Double Jump
-[F] - Shield
-[E] - Interact
-[R] - Roll
-[1] - Select Heavy Attack
-[2] - Select Light Attack
-[Left Mouse] - Attack
+- [A] - Left
+- [D] - Right
+- [SPACE] - Jump / Double Jump
+- [F] - Shield
+- [E] - Interact
+- [R] - Roll
+- [1] - Select Heavy Attack
+- [2] - Select Light Attack
+- [Left Mouse] - Attack
+- 
 ## Developers
 
 - Kensho Pilkey
