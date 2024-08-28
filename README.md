@@ -16,14 +16,14 @@ You find yourself thrown into a digital battlefield inside your own computer aft
 [Left Mouse] - Attack
 ## Developers
 
-Kensho Pilkey
-Adriel Lanuza Zeledon
-Bryson Hogsed
-Credits
+- Kensho Pilkey
+- Adriel Lanuza Zeledon
+- Bryson Hogsed
+## Credits
 
-Background: Mezinos - dylestorm - SEGA, Aspect, and Sonic Team
-Character Art: AnalogStudios - Penusbmic
-Music: Moodmode - m0sh
+- Background: Mezinos - dylestorm - SEGA, Aspect, and Sonic Team
+- Character Art: AnalogStudios - Penusbmic
+- Music: Moodmode - m0sh
 
 # Download the Game vvv
 https://kenshop.itch.io/cyber-crusade
