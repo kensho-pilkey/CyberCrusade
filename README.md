@@ -14,7 +14,7 @@ You find yourself thrown into a digital battlefield inside your own computer aft
 - [1] - Select Heavy Attack
 - [2] - Select Light Attack
 - [Left Mouse] - Attack
-- 
+  
 ## Developers
 
 - Kensho Pilkey
